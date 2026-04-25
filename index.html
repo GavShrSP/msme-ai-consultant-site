@@ -3,185 +3,1179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaurav Shrotriya | AI Automation Growth Consultant</title>
-
+  <title>Gaurav Shrotriya | AI Automation Growth Consultant for MSMEs in India</title>
+  <meta name="description" content="Gaurav Shrotriya is an independent AI, automation, and growth consultant for MSMEs in India, with 18+ years across presales, solution consulting, product strategy, SaaS, and enterprise solutions.">
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+    :root {
+      --ink: #111816;
+      --muted: #61706a;
+      --soft: #edf4ef;
+      --line: #dfe8e3;
+      --paper: #f8faf7;
+      --surface: #ffffff;
+      --sage: #e6f1eb;
+      --mint: #d6eadf;
+      --teal: #12695d;
+      --teal-dark: #0b403a;
+      --gold: #aa7a30;
+      --shadow: 0 22px 60px rgba(17, 24, 22, 0.08);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f7f9f8;
-      color: #222;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
       line-height: 1.6;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(223, 232, 227, 0.78);
+      background: rgba(248, 250, 247, 0.86);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-family: "Space Grotesk", Inter, sans-serif;
+      letter-spacing: 0;
+      color: var(--teal-dark);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      font-size: 0.91rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--teal);
     }
 
     .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 0;
-    }
-
-    h1, h2, h3 {
-      margin-bottom: 10px;
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
     }
 
     .hero {
-      background: #0f766e;
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
+      padding: 104px 0 92px;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(214, 234, 223, 0.92), transparent 34%),
+        linear-gradient(120deg, rgba(248, 250, 247, 0.96), rgba(248, 250, 247, 0.84)),
+        url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=80") center / cover;
+      border-bottom: 1px solid var(--line);
     }
 
-    .hero p {
-      max-width: 700px;
-      margin: 20px auto;
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 56px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 18px;
+      padding: 8px 13px;
+      border: 1px solid rgba(22, 104, 91, 0.18);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.76);
+      color: var(--teal-dark);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-family: "Space Grotesk", Inter, sans-serif;
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: clamp(2.75rem, 7vw, 5.8rem);
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 660px;
+      margin: 28px 0 0;
+      color: #34423d;
+      font-size: clamp(1.06rem, 2vw, 1.22rem);
+      line-height: 1.75;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 36px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.94rem;
+      border: 1px solid transparent;
+      transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button.primary {
+      background: var(--teal);
+      color: #ffffff;
+      box-shadow: 0 14px 26px rgba(22, 104, 91, 0.2);
+    }
+
+    .button.primary:hover {
+      background: var(--teal-dark);
+    }
+
+    .button.secondary {
+      background: rgba(255, 255, 255, 0.82);
+      border-color: rgba(22, 104, 91, 0.18);
+      color: var(--teal-dark);
+    }
+
+    .hero-panel {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(223, 232, 227, 0.92);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 34px;
+      backdrop-filter: blur(16px);
+    }
+
+    .hero-panel h2 {
+      font-size: 1.28rem;
+      margin-bottom: 24px;
+    }
+
+    .metric-list {
+      display: grid;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .metric {
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--teal-dark);
+      font-size: 1.08rem;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section {
+      padding: 104px 0;
+    }
+
+    .section-kicker {
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+
+    .section-head {
+      max-width: 740px;
+      margin-bottom: 44px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2.08rem, 4vw, 3.35rem);
+      max-width: 820px;
+    }
+
+    .section-head p {
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 1.06rem;
+      line-height: 1.75;
     }
 
     .about {
-      display: flex;
-      gap: 30px;
-      align-items: center;
-      flex-wrap: wrap;
+      background:
+        linear-gradient(180deg, #ffffff 0%, #f4f8f5 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .profile-card {
+      position: sticky;
+      top: 106px;
+      padding: 34px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
     }
 
     .profile-photo {
-      width: 200px;
-      height: 200px;
+      width: min(100%, 300px);
+      aspect-ratio: 1;
+      margin: 0 auto 28px;
+      display: grid;
+      place-items: center;
       border-radius: 50%;
+      background:
+        linear-gradient(135deg, rgba(214, 234, 223, 0.94), rgba(255, 255, 255, 0.96)),
+        url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80") center / cover;
+      border: 8px solid #ffffff;
+      box-shadow: 0 22px 45px rgba(17, 24, 22, 0.12);
       overflow: hidden;
-      border: 5px solid #0f766e;
     }
 
-    .profile-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .profile-initials {
+      width: 92px;
+      height: 92px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.88);
+      color: var(--teal-dark);
+      font-family: "Space Grotesk", Inter, sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      border: 1px solid rgba(18, 105, 93, 0.14);
     }
 
-    .card {
-      background: white;
-      padding: 20px;
+    .profile-card h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+    }
+
+    .profile-title {
+      margin: 12px 0 0;
+      color: var(--teal-dark);
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .profile-note {
+      margin: 22px 0 0;
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--sage);
+      color: #33413d;
+      font-size: 0.97rem;
+    }
+
+    .profile-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .profile-stat {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+    }
+
+    .profile-stat strong {
+      display: block;
+      font-family: "Space Grotesk", Inter, sans-serif;
+      color: var(--teal-dark);
+      font-size: 1.28rem;
+      line-height: 1;
+    }
+
+    .profile-stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.4;
+    }
+
+    .about-content {
+      display: grid;
+      gap: 28px;
+    }
+
+    .text-block {
+      color: var(--muted);
+      font-size: 1.04rem;
+      line-height: 1.78;
+    }
+
+    .text-block p {
+      margin: 0 0 18px;
+    }
+
+    .content-panel {
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 14px 34px rgba(17, 24, 22, 0.04);
+    }
+
+    .content-panel h3 {
+      margin-bottom: 18px;
+      font-size: 1.28rem;
+    }
+
+    .mission-box {
+      padding: 26px 30px;
+      border-radius: var(--radius);
+      background: var(--teal-dark);
+      color: #ffffff;
+      box-shadow: var(--shadow);
+    }
+
+    .mission-box .section-kicker {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .mission-box p {
+      margin: 0;
+      font-family: "Space Grotesk", Inter, sans-serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      line-height: 1.22;
+    }
+
+    .highlight-grid,
+    .difference-grid,
+    .help-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .highlight-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .difference-grid,
+    .help-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlight-item,
+    .difference-item,
+    .help-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+    }
+
+    .marker {
+      width: 34px;
+      height: 34px;
+      display: inline-grid;
+      place-items: center;
       border-radius: 10px;
-      margin-top: 20px;
+      background: var(--sage);
+      color: var(--teal-dark);
+      font-size: 0.76rem;
+      font-weight: 900;
     }
 
-    ul {
-      padding-left: 20px;
+    .highlight-item strong,
+    .difference-item strong,
+    .help-item strong {
+      display: block;
+      color: var(--ink);
+      line-height: 1.35;
     }
 
-    .cta {
-      background: #0f766e;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
+    .highlight-item span,
+    .difference-item span,
+    .help-item span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.62;
     }
 
-    .cta a {
+    .cta-line {
+      padding: 22px 26px;
+      border-left: 4px solid var(--gold);
+      border-radius: 14px;
+      background: #ffffff;
+      color: var(--teal-dark);
+      font-family: "Space Grotesk", Inter, sans-serif;
+      font-size: clamp(1.2rem, 2vw, 1.48rem);
+      font-weight: 700;
+      line-height: 1.35;
+      box-shadow: 0 14px 34px rgba(17, 24, 22, 0.04);
+    }
+
+    .background {
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .expertise-card {
+      padding: 28px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 14px 34px rgba(17, 24, 22, 0.045);
+    }
+
+    .expertise-card strong {
+      display: block;
+      color: var(--teal-dark);
+      font-family: "Space Grotesk", Inter, sans-serif;
+      font-size: 1.12rem;
+      line-height: 1.25;
+    }
+
+    .expertise-card span {
+      display: block;
+      margin-top: 12px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .mission-section {
+      background:
+        linear-gradient(135deg, rgba(11, 64, 58, 0.98), rgba(18, 105, 93, 0.95));
+      color: #ffffff;
+    }
+
+    .mission-layout {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .mission-section .section-kicker {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .mission-section h2 {
+      font-size: clamp(2.08rem, 4vw, 3.35rem);
+    }
+
+    .mission-section p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.08rem;
+      line-height: 1.76;
+    }
+
+    .mission-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .mission-list li {
+      padding: 18px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .cred-list {
+      display: grid;
+      gap: 16px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .cred-list li,
+    .service-card,
+    .case-card,
+    .process-step {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 14px 34px rgba(17, 24, 22, 0.045);
+    }
+
+    .cred-list li {
+      padding: 20px 22px;
+      color: #3b4742;
+    }
+
+    .cred-list strong {
+      color: var(--ink);
+    }
+
+    .services {
+      background: var(--soft);
+      border-block: 1px solid var(--line);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card,
+    .case-card {
+      padding: 30px;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .service-card:hover,
+    .case-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(18, 105, 93, 0.24);
+      box-shadow: 0 20px 44px rgba(17, 24, 22, 0.075);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      border-radius: 14px;
+      background: var(--sage);
+      color: var(--teal-dark);
+      font-weight: 900;
+    }
+
+    .service-card h3,
+    .case-card h3,
+    .process-step h3 {
+      font-size: 1.22rem;
+    }
+
+    .service-card p,
+    .case-card p,
+    .process-step p {
+      color: var(--muted);
+      margin: 14px 0 0;
+      line-height: 1.72;
+    }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .outcome {
       display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: white;
-      color: #0f766e;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+      margin-top: 22px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--mint);
+      color: var(--teal-dark);
+      font-size: 0.84rem;
+      font-weight: 800;
     }
 
-    @media(max-width: 700px){
-      .about {
-        flex-direction: column;
-        text-align: center;
+    .process {
+      background: #ffffff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .process-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      counter-reset: process;
+    }
+
+    .process-step {
+      position: relative;
+      padding: 30px;
+      min-height: 230px;
+    }
+
+    .process-step::before {
+      counter-increment: process;
+      content: "0" counter(process);
+      display: block;
+      margin-bottom: 24px;
+      color: var(--gold);
+      font-weight: 900;
+      font-size: 0.9rem;
+    }
+
+    .contact {
+      padding-bottom: 112px;
+    }
+
+    .cta-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 34px;
+      align-items: center;
+      padding: 44px;
+      background:
+        linear-gradient(135deg, rgba(11, 64, 58, 0.98), rgba(18, 105, 93, 0.95));
+      color: #ffffff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .cta-box h2 {
+      font-size: clamp(1.9rem, 4vw, 3rem);
+    }
+
+    .cta-box p {
+      max-width: 680px;
+      margin: 16px 0 0;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.75;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    .cta-actions .button {
+      background: #ffffff;
+      color: var(--teal-dark);
+    }
+
+    .cta-actions .button.email {
+      background: transparent;
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+
+    footer {
+      padding: 26px 0;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 920px) {
+      .hero-grid,
+      .about-grid,
+      .mission-layout,
+      .cta-box {
+        grid-template-columns: 1fr;
+      }
+
+      .card-grid,
+      .case-grid,
+      .expertise-grid,
+      .process-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cta-actions {
+        justify-content: flex-start;
+      }
+
+      .profile-card {
+        position: static;
       }
     }
 
+    @media (max-width: 680px) {
+      .nav {
+        min-height: 62px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 68px 0 54px;
+      }
+
+      h1 {
+        font-size: clamp(2.08rem, 11.5vw, 3.05rem);
+        line-height: 1.07;
+      }
+
+      .hero-copy {
+        margin-top: 22px;
+        font-size: 1rem;
+      }
+
+      section {
+        padding: 68px 0;
+      }
+
+      .section-head {
+        margin-bottom: 32px;
+      }
+
+      .section-head h2 {
+        font-size: clamp(1.85rem, 10vw, 2.5rem);
+      }
+
+      .card-grid,
+      .case-grid,
+      .expertise-grid,
+      .highlight-grid,
+      .difference-grid,
+      .help-grid,
+      .process-list {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-panel,
+      .profile-card,
+      .content-panel,
+      .expertise-card,
+      .service-card,
+      .case-card,
+      .process-step,
+      .cta-box {
+        padding: 24px;
+      }
+
+      .profile-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-photo {
+        width: min(100%, 230px);
+        margin-bottom: 24px;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .actions,
+      .cta-actions {
+        width: 100%;
+      }
+    }
   </style>
 </head>
-
 <body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top">Gaurav Shrotriya</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#background">Expertise</a>
+        <a href="#services">Services</a>
+        <a href="#help">How I Help</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Helping MSMEs Scale with AI, Automation & Growth Strategy</h1>
-  <p>
-    I help Indian businesses simplify operations, improve efficiency, and grow using practical AI and automation solutions.
-  </p>
-</section>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Independent AI, Automation &amp; Growth Consultant for MSMEs in India</p>
+          <h1>Practical AI and automation systems for growing MSME businesses.</h1>
+          <p class="hero-copy">
+            Gaurav Shrotriya helps Indian MSMEs simplify operations, improve customer engagement,
+            and build scalable growth systems using AI, automation, and practical business strategy.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#contact">Book a consultation</a>
+            <a class="button secondary" href="#services">Explore services</a>
+          </div>
+        </div>
 
-<div class="container">
+        <aside class="hero-panel" aria-label="Consulting focus">
+          <h2>Consulting focus</h2>
+          <ul class="metric-list">
+            <li class="metric">
+              <strong>18+ years of experience</strong>
+              <span>Across presales, solution consulting, product strategy, SaaS, and enterprise solutions.</span>
+            </li>
+            <li class="metric">
+              <strong>MSME-focused execution</strong>
+              <span>Solutions are designed for practical adoption, cost control, and clear business outcomes.</span>
+            </li>
+            <li class="metric">
+              <strong>AI and automation enablement</strong>
+              <span>Helping teams reduce manual work and improve repeatable business processes.</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <div class="profile-photo">
-      <img src="profile.jpg" alt="Gaurav Shrotriya">
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <aside class="profile-card" aria-label="About the consultant">
+          <div class="profile-photo" aria-label="Profile image">
+            <span class="profile-initials">GS</span>
+          </div>
+          <p class="section-kicker">About the consultant</p>
+          <h2>Gaurav Shrotriya</h2>
+          <p class="profile-title">Independent AI, Automation &amp; Growth Consultant for MSMEs in India</p>
+          <p class="profile-note">
+            Business-focused consulting for MSME owners who want to modernize operations, improve
+            efficiency, and adopt AI in a practical, sustainable way.
+          </p>
+          <div class="profile-stats">
+            <div class="profile-stat">
+              <strong>18+</strong>
+              <span>Years of professional experience</span>
+            </div>
+            <div class="profile-stat">
+              <strong>AI</strong>
+              <span>Automation and growth systems focus</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="about-content">
+          <div class="content-panel text-block">
+            <p class="section-kicker">Who I am</p>
+            <h3>Helping MSMEs use technology with clarity, discipline, and business purpose.</h3>
+            <p>
+              Gaurav Shrotriya is an independent consultant focused on AI, automation, and growth
+              strategy for MSMEs in India. His work combines technology understanding with practical
+              business thinking, helping owners and teams improve how they sell, operate, communicate,
+              and make decisions.
+            </p>
+            <p>
+              With 18+ years across presales, solution consulting, product strategy, SaaS, and
+              enterprise solutions, he brings a structured approach to solving business problems.
+              The focus is clear: identify what is slowing the business down, design simple systems,
+              and support implementation that creates visible value.
+            </p>
+          </div>
+
+          <div class="content-panel">
+            <p class="section-kicker">Credibility highlights</p>
+            <h3>Experience shaped by solution-led business environments.</h3>
+            <div class="highlight-grid">
+              <div class="highlight-item">
+                <span class="marker">18</span>
+                <div>
+                  <strong>18+ years of experience</strong>
+                  <span>Professional background across business technology, customer needs, and solution design.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="marker">SC</span>
+                <div>
+                  <strong>Presales and solution consulting</strong>
+                  <span>Experience translating business requirements into practical solution approaches.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="marker">PS</span>
+                <div>
+                  <strong>Product strategy exposure</strong>
+                  <span>Understanding of positioning, customer value, adoption, and product-led growth thinking.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="marker">SA</span>
+                <div>
+                  <strong>SaaS and enterprise solutions background</strong>
+                  <span>Familiarity with digital platforms, scalable systems, and technology-led business processes.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-panel">
+            <p class="section-kicker">What makes me different</p>
+            <h3>Practical consulting for MSMEs, not generic transformation advice.</h3>
+            <div class="difference-grid">
+              <div class="difference-item">
+                <span class="marker">01</span>
+                <div>
+                  <strong>MSME-focused</strong>
+                  <span>Recommendations are shaped for Indian small and mid-sized businesses with real resource constraints.</span>
+                </div>
+              </div>
+              <div class="difference-item">
+                <span class="marker">02</span>
+                <div>
+                  <strong>Simple and cost-effective</strong>
+                  <span>Solutions are designed to be understandable, affordable, and manageable after implementation.</span>
+                </div>
+              </div>
+              <div class="difference-item">
+                <span class="marker">03</span>
+                <div>
+                  <strong>Personalized approach</strong>
+                  <span>Consulting starts with your current process, customer journey, team capacity, and growth priorities.</span>
+                </div>
+              </div>
+              <div class="difference-item">
+                <span class="marker">04</span>
+                <div>
+                  <strong>Execution over advice</strong>
+                  <span>The focus is on practical workflows, clear next steps, and systems your team can use.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="background" id="background">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Professional background &amp; expertise</p>
+          <h2>Strong grounding in business solutions, technology adoption, and growth systems.</h2>
+          <p>
+            Gaurav's consulting approach is informed by hands-on exposure to how businesses evaluate,
+            adopt, and scale digital solutions.
+          </p>
+        </div>
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <span class="marker">01</span>
+            <strong>Presales and solution consulting</strong>
+            <span>Understanding customer requirements, business context, buying priorities, and practical solution fit.</span>
+          </article>
+          <article class="expertise-card">
+            <span class="marker">02</span>
+            <strong>Product strategy</strong>
+            <span>Connecting customer problems, positioning, adoption, and long-term value creation.</span>
+          </article>
+          <article class="expertise-card">
+            <span class="marker">03</span>
+            <strong>SaaS and enterprise solutions</strong>
+            <span>Experience with scalable software-led systems, workflows, and digital operating models.</span>
+          </article>
+          <article class="expertise-card">
+            <span class="marker">04</span>
+            <strong>AI and automation for MSMEs</strong>
+            <span>Applying modern tools to improve efficiency, customer engagement, and day-to-day execution.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Services</p>
+          <h2>Focused consulting services for practical business improvement.</h2>
+          <p>Engagements can be targeted to one business problem or combined into a structured growth roadmap.</p>
+        </div>
+        <div class="card-grid">
+          <article class="service-card">
+            <div class="icon">AI</div>
+            <h3>AI Solutions</h3>
+            <p>Identify meaningful AI use cases for customer communication, sales support, content workflows, reporting, and decision support.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">AU</div>
+            <h3>Automation Systems</h3>
+            <p>Design workflows that reduce repetitive work across lead capture, follow-ups, internal reporting, tasks, and customer operations.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">GS</div>
+            <h3>Growth Strategy</h3>
+            <p>Clarify positioning, improve conversion journeys, structure campaigns, and build measurable growth actions for MSME teams.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="help">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">How I can help</p>
+          <h2>Outcome-based support for MSMEs that want better systems and clearer growth.</h2>
+        </div>
+        <div class="help-grid">
+          <div class="help-item">
+            <span class="marker">A</span>
+            <div>
+              <strong>Reduce manual work using automation</strong>
+              <span>Automate follow-ups, reminders, reporting, data movement, and routine coordination tasks.</span>
+            </div>
+          </div>
+          <div class="help-item">
+            <span class="marker">B</span>
+            <div>
+              <strong>Improve customer engagement using AI tools</strong>
+              <span>Create faster response workflows, clearer communication templates, and more consistent customer touchpoints.</span>
+            </div>
+          </div>
+          <div class="help-item">
+            <span class="marker">C</span>
+            <div>
+              <strong>Streamline operations</strong>
+              <span>Improve how sales, service delivery, reporting, and internal handoffs work across the business.</span>
+            </div>
+          </div>
+          <div class="help-item">
+            <span class="marker">D</span>
+            <div>
+              <strong>Support business growth with practical strategies</strong>
+              <span>Build focused actions for lead generation, conversion, retention, and repeatable execution.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Consulting workflow</p>
+          <h2>A clear process from business diagnosis to practical implementation.</h2>
+        </div>
+        <div class="process-list">
+          <article class="process-step">
+            <h3>Discover</h3>
+            <p>Understand current goals, tools, customer journeys, operational bottlenecks, and team responsibilities.</p>
+          </article>
+          <article class="process-step">
+            <h3>Prioritize</h3>
+            <p>Identify the highest-value AI, automation, and growth opportunities based on impact, effort, and cost.</p>
+          </article>
+          <article class="process-step">
+            <h3>Build</h3>
+            <p>Design workflows, prompts, automations, reporting structures, and operating documents.</p>
+          </article>
+          <article class="process-step">
+            <h3>Improve</h3>
+            <p>Review adoption, measure results, refine the system, and plan the next improvement cycle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-section" id="mission">
+      <div class="container mission-layout">
+        <div>
+          <p class="section-kicker">Mission</p>
+          <h2>Helping MSMEs in India grow efficiently with AI and modern systems.</h2>
+        </div>
+        <div>
+          <p>
+            Gaurav's mission is to help MSMEs adopt AI, automation, and structured growth practices
+            without unnecessary complexity. The focus is on useful systems that improve daily work,
+            support better customer engagement, and create a stronger foundation for sustainable growth.
+          </p>
+          <ul class="mission-list">
+            <li>Make AI practical and understandable for business owners and teams.</li>
+            <li>Use automation to save time and reduce operational friction.</li>
+            <li>Build growth systems that are simple enough to execute consistently.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2>Let's simplify and scale your business using AI.</h2>
+            <p>
+              Start with a practical conversation about your current operations, growth priorities,
+              and where AI or automation can create the most useful improvement.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="button" href="#top">Start a conversation</a>
+            <a class="button email" href="#services">View services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Gaurav Shrotriya - Independent AI, Automation &amp; Growth Consultant for MSMEs in India.
     </div>
-
-    <div>
-      <h2>Gaurav Shrotriya</h2>
-      <p><strong>Independent AI, Automation & Growth Consultant for MSMEs</strong></p>
-
-      <p>
-        With 18+ years of experience in presales, solution consulting, and product strategy,
-        I help businesses translate technology into real business outcomes.
-      </p>
-
-      <p>
-        I specialize in helping MSMEs adopt AI and automation in a practical, cost-effective,
-        and result-oriented way.
-      </p>
-    </div>
-  </section>
-
-  <!-- CREDENTIALS -->
-  <div class="card">
-    <h3>Professional Background</h3>
-    <ul>
-      <li>18+ years experience in consulting and product strategy</li>
-      <li>Hands-on experience with demos, POCs, and enterprise solutions</li>
-      <li>Background in SaaS and platform-based business models</li>
-      <li>Worked across Automotive, Supply Chain, CRM, and Construction</li>
-    </ul>
-  </div>
-
-  <!-- SERVICES -->
-  <div class="card">
-    <h3>Services</h3>
-    <ul>
-      <li><strong>AI Solutions</strong> – Identify and implement practical AI use cases</li>
-      <li><strong>Automation</strong> – Reduce manual work and improve efficiency</li>
-      <li><strong>Growth Strategy</strong> – Build scalable business systems</li>
-    </ul>
-  </div>
-
-  <!-- HOW I HELP -->
-  <div class="card">
-    <h3>How I Help Businesses</h3>
-    <ul>
-      <li>Reduce manual work using automation</li>
-      <li>Improve customer engagement with AI tools</li>
-      <li>Streamline operations</li>
-      <li>Enable scalable growth systems</li>
-    </ul>
-  </div>
-
-  <!-- DIFFERENT -->
-  <div class="card">
-    <h3>What Makes Me Different</h3>
-    <ul>
-      <li>Focused on MSMEs (not large corporates)</li>
-      <li>Practical, implementation-driven approach</li>
-      <li>Simple and cost-effective solutions</li>
-      <li>Execution-focused consulting</li>
-    </ul>
-  </div>
-
-</div>
-
-<!-- CTA -->
-<section class="cta">
-  <h2>Let’s Work Together</h2>
-  <p>If you want to scale your business using AI and automation, let’s connect.</p>
-  <a href="#">Contact Me</a>
-</section>
-
+  </footer>
 </body>
 </html>
