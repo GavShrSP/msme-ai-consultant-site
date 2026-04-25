@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Automation Growth Consultant for MSMEs in India</title>
-  <meta name="description" content="Independent AI, automation, and growth strategy consulting for MSMEs in India. Practical systems that save time, improve sales, and support sustainable growth.">
+  <title>Gaurav Shrotriya | AI Automation Growth Consultant for MSMEs in India</title>
+  <meta name="description" content="Gaurav Shrotriya is an independent AI, automation, and growth consultant for MSMEs in India, with 18+ years across presales, solution consulting, product strategy, SaaS, and enterprise solutions.">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap");
 
@@ -269,7 +269,7 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: 0.92fr 1.08fr;
+      grid-template-columns: 0.9fr 1.1fr;
       gap: 64px;
       align-items: start;
     }
@@ -332,6 +332,36 @@
       background: var(--sage);
       color: #33413d;
       font-size: 0.97rem;
+    }
+
+    .profile-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .profile-stat {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+    }
+
+    .profile-stat strong {
+      display: block;
+      font-family: "Space Grotesk", Inter, sans-serif;
+      color: var(--teal-dark);
+      font-size: 1.28rem;
+      line-height: 1;
+    }
+
+    .profile-stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.4;
     }
 
     .about-content {
@@ -451,6 +481,83 @@
       font-weight: 700;
       line-height: 1.35;
       box-shadow: 0 14px 34px rgba(17, 24, 22, 0.04);
+    }
+
+    .background {
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .expertise-card {
+      padding: 28px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 14px 34px rgba(17, 24, 22, 0.045);
+    }
+
+    .expertise-card strong {
+      display: block;
+      color: var(--teal-dark);
+      font-family: "Space Grotesk", Inter, sans-serif;
+      font-size: 1.12rem;
+      line-height: 1.25;
+    }
+
+    .expertise-card span {
+      display: block;
+      margin-top: 12px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .mission-section {
+      background:
+        linear-gradient(135deg, rgba(11, 64, 58, 0.98), rgba(18, 105, 93, 0.95));
+      color: #ffffff;
+    }
+
+    .mission-layout {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .mission-section .section-kicker {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .mission-section h2 {
+      font-size: clamp(2.08rem, 4vw, 3.35rem);
+    }
+
+    .mission-section p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.08rem;
+      line-height: 1.76;
+    }
+
+    .mission-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .mission-list li {
+      padding: 18px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.86);
     }
 
     .cred-list {
@@ -633,12 +740,14 @@
     @media (max-width: 920px) {
       .hero-grid,
       .about-grid,
+      .mission-layout,
       .cta-box {
         grid-template-columns: 1fr;
       }
 
       .card-grid,
       .case-grid,
+      .expertise-grid,
       .process-list {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -666,7 +775,7 @@
       }
 
       h1 {
-        font-size: clamp(2.35rem, 13vw, 3.45rem);
+        font-size: clamp(2.08rem, 11.5vw, 3.05rem);
         line-height: 1.07;
       }
 
@@ -689,6 +798,7 @@
 
       .card-grid,
       .case-grid,
+      .expertise-grid,
       .highlight-grid,
       .difference-grid,
       .help-grid,
@@ -699,11 +809,16 @@
       .hero-panel,
       .profile-card,
       .content-panel,
+      .expertise-card,
       .service-card,
       .case-card,
       .process-step,
       .cta-box {
         padding: 24px;
+      }
+
+      .profile-stats {
+        grid-template-columns: 1fr;
       }
 
       .profile-photo {
@@ -725,12 +840,12 @@
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top">AI Growth Consultant</a>
+      <a class="brand" href="#top">Gaurav Shrotriya</a>
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#background">Expertise</a>
         <a href="#services">Services</a>
-        <a href="#examples">Examples</a>
-        <a href="#process">Process</a>
+        <a href="#help">How I Help</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -740,32 +855,32 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">AI + Automation + Growth Strategy for Indian MSMEs</p>
-          <h1>Turn everyday business operations into simple, scalable systems.</h1>
+          <p class="eyebrow">Independent AI, Automation &amp; Growth Consultant for MSMEs in India</p>
+          <h1>Practical AI and automation systems for growing MSME businesses.</h1>
           <p class="hero-copy">
-            Practical consulting for owners and teams who want to save time, convert more leads,
-            and grow with AI tools that fit the realities of Indian small and mid-sized businesses.
+            Gaurav Shrotriya helps Indian MSMEs simplify operations, improve customer engagement,
+            and build scalable growth systems using AI, automation, and practical business strategy.
           </p>
           <div class="actions">
-            <a class="button primary" href="https://wa.me/919999999999">Book a WhatsApp consult</a>
+            <a class="button primary" href="#contact">Book a consultation</a>
             <a class="button secondary" href="#services">Explore services</a>
           </div>
         </div>
 
         <aside class="hero-panel" aria-label="Consulting focus">
-          <h2>Built for measurable improvements</h2>
+          <h2>Consulting focus</h2>
           <ul class="metric-list">
             <li class="metric">
-              <strong>Reduce manual work</strong>
-              <span>Automate follow-ups, reporting, reminders, and repetitive admin.</span>
+              <strong>18+ years of experience</strong>
+              <span>Across presales, solution consulting, product strategy, SaaS, and enterprise solutions.</span>
             </li>
             <li class="metric">
-              <strong>Improve sales velocity</strong>
-              <span>Design cleaner funnels, lead scoring, and customer communication flows.</span>
+              <strong>MSME-focused execution</strong>
+              <span>Solutions are designed for practical adoption, cost control, and clear business outcomes.</span>
             </li>
             <li class="metric">
-              <strong>Make AI usable</strong>
-              <span>Deploy tools your team can understand, maintain, and actually adopt.</span>
+              <strong>AI and automation enablement</strong>
+              <span>Helping teams reduce manual work and improve repeatable business processes.</span>
             </li>
           </ul>
         </aside>
@@ -775,148 +890,150 @@
     <section class="about" id="about">
       <div class="container about-grid">
         <aside class="profile-card" aria-label="About the consultant">
-          <div class="profile-photo" aria-label="Profile photo placeholder">
-            <span class="profile-initials">YN</span>
+          <div class="profile-photo" aria-label="Profile image">
+            <span class="profile-initials">GS</span>
           </div>
           <p class="section-kicker">About the consultant</p>
-          <h2>Your Name</h2>
-          <p class="profile-title">Independent AI, Automation &amp; Growth Consultant for MSMEs</p>
+          <h2>Gaurav Shrotriya</h2>
+          <p class="profile-title">Independent AI, Automation &amp; Growth Consultant for MSMEs in India</p>
           <p class="profile-note">
-            Practical consulting for Indian MSME owners who want clearer systems, better follow-up,
-            and growth initiatives that fit their budget and team capacity.
+            Business-focused consulting for MSME owners who want to modernize operations, improve
+            efficiency, and adopt AI in a practical, sustainable way.
           </p>
+          <div class="profile-stats">
+            <div class="profile-stat">
+              <strong>18+</strong>
+              <span>Years of professional experience</span>
+            </div>
+            <div class="profile-stat">
+              <strong>AI</strong>
+              <span>Automation and growth systems focus</span>
+            </div>
+          </div>
         </aside>
 
         <div class="about-content">
           <div class="content-panel text-block">
             <p class="section-kicker">Who I am</p>
-            <h3>Helping small and mid-sized businesses use technology with confidence.</h3>
+            <h3>Helping MSMEs use technology with clarity, discipline, and business purpose.</h3>
             <p>
-              I help MSMEs in India apply AI solutions, automation, and growth strategy to everyday
-              business problems. My work is focused on practical improvements such as reducing manual
-              effort, improving customer communication, organizing business data, and creating simple
-              systems that teams can actually use.
+              Gaurav Shrotriya is an independent consultant focused on AI, automation, and growth
+              strategy for MSMEs in India. His work combines technology understanding with practical
+              business thinking, helping owners and teams improve how they sell, operate, communicate,
+              and make decisions.
             </p>
             <p>
-              The goal is not to add complexity. The goal is to understand where time, money, and
-              opportunities are being lost, then build result-oriented workflows that make the business
-              easier to manage and easier to grow.
+              With 18+ years across presales, solution consulting, product strategy, SaaS, and
+              enterprise solutions, he brings a structured approach to solving business problems.
+              The focus is clear: identify what is slowing the business down, design simple systems,
+              and support implementation that creates visible value.
             </p>
           </div>
 
           <div class="content-panel">
-            <p class="section-kicker">Credibility</p>
-            <h3>Built around real MSME priorities.</h3>
+            <p class="section-kicker">Credibility highlights</p>
+            <h3>Experience shaped by solution-led business environments.</h3>
             <div class="highlight-grid">
               <div class="highlight-item">
-                <span class="marker">AI</span>
+                <span class="marker">18</span>
                 <div>
-                  <strong>Focused on AI, automation, and scalable systems</strong>
-                  <span>Workflows are designed to support better decisions, faster follow-up, and smoother operations.</span>
+                  <strong>18+ years of experience</strong>
+                  <span>Professional background across business technology, customer needs, and solution design.</span>
                 </div>
               </div>
               <div class="highlight-item">
-                <span class="marker">EX</span>
+                <span class="marker">SC</span>
                 <div>
-                  <strong>Practical, implementation-driven approach</strong>
-                  <span>Recommendations are kept clear, usable, and connected to execution instead of theory-heavy plans.</span>
+                  <strong>Presales and solution consulting</strong>
+                  <span>Experience translating business requirements into practical solution approaches.</span>
                 </div>
               </div>
               <div class="highlight-item">
-                <span class="marker">MS</span>
+                <span class="marker">PS</span>
                 <div>
-                  <strong>Understanding of MSME challenges</strong>
-                  <span>Solutions consider cost, time, efficiency, team size, and adoption effort from the start.</span>
+                  <strong>Product strategy exposure</strong>
+                  <span>Understanding of positioning, customer value, adoption, and product-led growth thinking.</span>
                 </div>
               </div>
               <div class="highlight-item">
-                <span class="marker">RI</span>
+                <span class="marker">SA</span>
                 <div>
-                  <strong>Designed for real business impact</strong>
-                  <span>Every project is shaped around outcomes that can improve day-to-day business performance.</span>
+                  <strong>SaaS and enterprise solutions background</strong>
+                  <span>Familiarity with digital platforms, scalable systems, and technology-led business processes.</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="mission-box">
-            <p class="section-kicker">Mission</p>
-            <p>Helping MSMEs in India adopt AI and modern systems to grow efficiently and sustainably.</p>
-          </div>
-
           <div class="content-panel">
             <p class="section-kicker">What makes me different</p>
-            <h3>Simple, focused consulting for businesses that need momentum.</h3>
+            <h3>Practical consulting for MSMEs, not generic transformation advice.</h3>
             <div class="difference-grid">
               <div class="difference-item">
                 <span class="marker">01</span>
                 <div>
                   <strong>MSME-focused</strong>
-                  <span>Guidance is built for small and mid-sized businesses, not large corporate teams.</span>
+                  <span>Recommendations are shaped for Indian small and mid-sized businesses with real resource constraints.</span>
                 </div>
               </div>
               <div class="difference-item">
                 <span class="marker">02</span>
                 <div>
-                  <strong>Cost-effective solutions</strong>
-                  <span>Tool choices and workflows are planned around sensible budgets and clear returns.</span>
+                  <strong>Simple and cost-effective</strong>
+                  <span>Solutions are designed to be understandable, affordable, and manageable after implementation.</span>
                 </div>
               </div>
               <div class="difference-item">
                 <span class="marker">03</span>
                 <div>
                   <strong>Personalized approach</strong>
-                  <span>Each recommendation is matched to your current process, customer journey, and team capacity.</span>
+                  <span>Consulting starts with your current process, customer journey, team capacity, and growth priorities.</span>
                 </div>
               </div>
               <div class="difference-item">
                 <span class="marker">04</span>
                 <div>
                   <strong>Execution over advice</strong>
-                  <span>The focus is on workflows, systems, and next steps your business can put into practice.</span>
+                  <span>The focus is on practical workflows, clear next steps, and systems your team can use.</span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="content-panel">
-            <p class="section-kicker">How I can help</p>
-            <h3>Outcome-based support for practical growth.</h3>
-            <div class="help-grid">
-              <div class="help-item">
-                <span class="marker">A</span>
-                <div>
-                  <strong>Reduce manual work</strong>
-                  <span>Use automation to handle repetitive follow-ups, reporting, reminders, and admin tasks.</span>
-                </div>
-              </div>
-              <div class="help-item">
-                <span class="marker">B</span>
-                <div>
-                  <strong>Improve customer engagement</strong>
-                  <span>Use AI tools to support faster responses, better messaging, and more consistent communication.</span>
-                </div>
-              </div>
-              <div class="help-item">
-                <span class="marker">C</span>
-                <div>
-                  <strong>Streamline operations</strong>
-                  <span>Create cleaner workflows across sales, service delivery, reporting, and internal coordination.</span>
-                </div>
-              </div>
-              <div class="help-item">
-                <span class="marker">D</span>
-                <div>
-                  <strong>Support business growth</strong>
-                  <span>Build practical strategies for lead generation, conversion, retention, and scalable execution.</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cta-line">
-            Let's work together to simplify and scale your business using AI.
-          </div>
+    <section class="background" id="background">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Professional background &amp; expertise</p>
+          <h2>Strong grounding in business solutions, technology adoption, and growth systems.</h2>
+          <p>
+            Gaurav's consulting approach is informed by hands-on exposure to how businesses evaluate,
+            adopt, and scale digital solutions.
+          </p>
+        </div>
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <span class="marker">01</span>
+            <strong>Presales and solution consulting</strong>
+            <span>Understanding customer requirements, business context, buying priorities, and practical solution fit.</span>
+          </article>
+          <article class="expertise-card">
+            <span class="marker">02</span>
+            <strong>Product strategy</strong>
+            <span>Connecting customer problems, positioning, adoption, and long-term value creation.</span>
+          </article>
+          <article class="expertise-card">
+            <span class="marker">03</span>
+            <strong>SaaS and enterprise solutions</strong>
+            <span>Experience with scalable software-led systems, workflows, and digital operating models.</span>
+          </article>
+          <article class="expertise-card">
+            <span class="marker">04</span>
+            <strong>AI and automation for MSMEs</strong>
+            <span>Applying modern tools to improve efficiency, customer engagement, and day-to-day execution.</span>
+          </article>
         </div>
       </div>
     </section>
@@ -925,51 +1042,64 @@
       <div class="container">
         <div class="section-head">
           <p class="section-kicker">Services</p>
-          <h2>Focused support across AI, automation, and growth.</h2>
-          <p>Choose a targeted project or combine services into a practical transformation roadmap.</p>
+          <h2>Focused consulting services for practical business improvement.</h2>
+          <p>Engagements can be targeted to one business problem or combined into a structured growth roadmap.</p>
         </div>
         <div class="card-grid">
           <article class="service-card">
             <div class="icon">AI</div>
             <h3>AI Solutions</h3>
-            <p>Use AI for customer support drafts, internal knowledge search, sales scripts, content workflows, and data-backed decisions.</p>
+            <p>Identify meaningful AI use cases for customer communication, sales support, content workflows, reporting, and decision support.</p>
           </article>
           <article class="service-card">
             <div class="icon">AU</div>
             <h3>Automation Systems</h3>
-            <p>Connect forms, sheets, CRMs, WhatsApp workflows, email, invoicing, dashboards, and task management tools.</p>
+            <p>Design workflows that reduce repetitive work across lead capture, follow-ups, internal reporting, tasks, and customer operations.</p>
           </article>
           <article class="service-card">
             <div class="icon">GS</div>
             <h3>Growth Strategy</h3>
-            <p>Sharpen positioning, improve conversion journeys, structure campaigns, and build monthly growth experiments.</p>
+            <p>Clarify positioning, improve conversion journeys, structure campaigns, and build measurable growth actions for MSME teams.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="examples">
+    <section id="help">
       <div class="container">
         <div class="section-head">
-          <p class="section-kicker">Case-style examples</p>
-          <h2>Conceptual outcomes designed around real MSME challenges.</h2>
+          <p class="section-kicker">How I can help</p>
+          <h2>Outcome-based support for MSMEs that want better systems and clearer growth.</h2>
         </div>
-        <div class="case-grid">
-          <article class="case-card">
-            <h3>Distributor lead follow-up</h3>
-            <p>A WhatsApp inquiry flow captures lead details, routes hot leads to sales, and triggers reminders for delayed follow-ups.</p>
-            <span class="outcome">30-40% faster response time</span>
-          </article>
-          <article class="case-card">
-            <h3>Service business reporting</h3>
-            <p>Weekly operations data from sheets and forms turns into a clear dashboard for revenue, pending work, and team load.</p>
-            <span class="outcome">4-6 hours saved weekly</span>
-          </article>
-          <article class="case-card">
-            <h3>Local brand growth engine</h3>
-            <p>Customer segments, offers, campaign calendars, and AI-assisted content workflows support consistent demand generation.</p>
-            <span class="outcome">More consistent pipeline</span>
-          </article>
+        <div class="help-grid">
+          <div class="help-item">
+            <span class="marker">A</span>
+            <div>
+              <strong>Reduce manual work using automation</strong>
+              <span>Automate follow-ups, reminders, reporting, data movement, and routine coordination tasks.</span>
+            </div>
+          </div>
+          <div class="help-item">
+            <span class="marker">B</span>
+            <div>
+              <strong>Improve customer engagement using AI tools</strong>
+              <span>Create faster response workflows, clearer communication templates, and more consistent customer touchpoints.</span>
+            </div>
+          </div>
+          <div class="help-item">
+            <span class="marker">C</span>
+            <div>
+              <strong>Streamline operations</strong>
+              <span>Improve how sales, service delivery, reporting, and internal handoffs work across the business.</span>
+            </div>
+          </div>
+          <div class="help-item">
+            <span class="marker">D</span>
+            <div>
+              <strong>Support business growth with practical strategies</strong>
+              <span>Build focused actions for lead generation, conversion, retention, and repeatable execution.</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -977,26 +1107,47 @@
     <section class="process" id="process">
       <div class="container">
         <div class="section-head">
-          <p class="section-kicker">Process</p>
-          <h2>A clear workflow from diagnosis to adoption.</h2>
+          <p class="section-kicker">Consulting workflow</p>
+          <h2>A clear process from business diagnosis to practical implementation.</h2>
         </div>
         <div class="process-list">
           <article class="process-step">
             <h3>Discover</h3>
-            <p>Map current goals, tools, bottlenecks, customer journeys, and team responsibilities.</p>
+            <p>Understand current goals, tools, customer journeys, operational bottlenecks, and team responsibilities.</p>
           </article>
           <article class="process-step">
             <h3>Prioritize</h3>
-            <p>Score opportunities by business impact, effort, cost, and adoption risk.</p>
+            <p>Identify the highest-value AI, automation, and growth opportunities based on impact, effort, and cost.</p>
           </article>
           <article class="process-step">
             <h3>Build</h3>
-            <p>Create workflows, prompts, automations, dashboards, and operating documents.</p>
+            <p>Design workflows, prompts, automations, reporting structures, and operating documents.</p>
           </article>
           <article class="process-step">
             <h3>Improve</h3>
-            <p>Measure usage and results, refine the system, and plan the next growth cycle.</p>
+            <p>Review adoption, measure results, refine the system, and plan the next improvement cycle.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-section" id="mission">
+      <div class="container mission-layout">
+        <div>
+          <p class="section-kicker">Mission</p>
+          <h2>Helping MSMEs in India grow efficiently with AI and modern systems.</h2>
+        </div>
+        <div>
+          <p>
+            Gaurav's mission is to help MSMEs adopt AI, automation, and structured growth practices
+            without unnecessary complexity. The focus is on useful systems that improve daily work,
+            support better customer engagement, and create a stronger foundation for sustainable growth.
+          </p>
+          <ul class="mission-list">
+            <li>Make AI practical and understandable for business owners and teams.</li>
+            <li>Use automation to save time and reduce operational friction.</li>
+            <li>Build growth systems that are simple enough to execute consistently.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -1006,12 +1157,15 @@
         <div class="cta-box">
           <div>
             <p class="section-kicker">Contact</p>
-            <h2>Ready to find the highest-impact automation in your business?</h2>
-            <p>Start with a short conversation about your current workflow, team size, and growth priorities.</p>
+            <h2>Let's simplify and scale your business using AI.</h2>
+            <p>
+              Start with a practical conversation about your current operations, growth priorities,
+              and where AI or automation can create the most useful improvement.
+            </p>
           </div>
           <div class="cta-actions">
-            <a class="button" href="https://wa.me/919999999999">WhatsApp</a>
-            <a class="button email" href="mailto:hello@example.com">Email</a>
+            <a class="button" href="#top">Start a conversation</a>
+            <a class="button email" href="#services">View services</a>
           </div>
         </div>
       </div>
@@ -1020,7 +1174,7 @@
 
   <footer>
     <div class="container">
-      Independent AI, Automation, and Growth Strategy Consultant for MSMEs in India.
+      Gaurav Shrotriya - Independent AI, Automation &amp; Growth Consultant for MSMEs in India.
     </div>
   </footer>
 </body>
