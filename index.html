@@ -284,36 +284,23 @@
       box-shadow: var(--shadow);
     }
 
-   .profile-photo {
-  width: min(100%, 300px);
-  aspect-ratio: 1;
-  margin: 0 auto 28px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 8px solid #ffffff;
-  box-shadow: 0 22px 45px rgba(17, 24, 22, 0.12);
-}
-
-.profile-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+    .profile-photo {
+      width: min(100%, 300px);
+      aspect-ratio: 1;
+      margin: 0 auto 28px;
+      border-radius: 50%;
+      background: var(--sage);
+      border: 8px solid #ffffff;
+      box-shadow: 0 22px 45px rgba(17, 24, 22, 0.12);
+      overflow: hidden;
     }
 
-    .profile-initials {
-      width: 92px;
-      height: 92px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.88);
-      color: var(--teal-dark);
-      font-family: "Space Grotesk", Inter, sans-serif;
-      font-size: 2rem;
-      font-weight: 800;
-      letter-spacing: 0;
-      border: 1px solid rgba(18, 105, 93, 0.14);
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
     }
 
     .profile-card h2 {
@@ -334,6 +321,47 @@
       background: var(--sage);
       color: #33413d;
       font-size: 0.97rem;
+    }
+
+    .profile-contact {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .profile-contact a {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: center;
+      min-height: 44px;
+      padding: 11px 14px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+      color: var(--teal-dark);
+      font-size: 0.92rem;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+      transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .profile-contact a:hover {
+      transform: translateY(-1px);
+      border-color: rgba(18, 105, 93, 0.24);
+      box-shadow: 0 12px 28px rgba(17, 24, 22, 0.06);
+    }
+
+    .contact-icon {
+      width: 30px;
+      height: 30px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 10px;
+      background: var(--sage);
+      color: var(--teal-dark);
+      font-size: 0.72rem;
+      font-weight: 900;
     }
 
     .profile-stats {
@@ -893,7 +921,7 @@
       <div class="container about-grid">
         <aside class="profile-card" aria-label="About the consultant">
           <div class="profile-photo">
-  <img src="Profile.jpg" alt="Gaurav Shrotriya">
+            <img src="Profile.jpg" alt="Gaurav Shrotriya profile photo">
           </div>
           <p class="section-kicker">About the consultant</p>
           <h2>Gaurav Shrotriya</h2>
@@ -902,6 +930,20 @@
             Business-focused consulting for MSME owners who want to modernize operations, improve
             efficiency, and adopt AI in a practical, sustainable way.
           </p>
+          <div class="profile-contact" aria-label="Consultant contact details">
+            <a href="mailto:Posttogaurav.s@gmail.com">
+              <span class="contact-icon">EM</span>
+              <span>Posttogaurav.s@gmail.com</span>
+            </a>
+            <a href="tel:+917016978463">
+              <span class="contact-icon">PH</span>
+              <span>+91 7016978463</span>
+            </a>
+            <a href="https://www.linkedin.com/in/gaurav-shrotriya/" target="_blank" rel="noopener">
+              <span class="contact-icon">IN</span>
+              <span>LinkedIn Profile</span>
+            </a>
+          </div>
           <div class="profile-stats">
             <div class="profile-stat">
               <strong>18+</strong>
